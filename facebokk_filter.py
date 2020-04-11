@@ -10,7 +10,10 @@ sql = "INSERT INTO public.cuentas(nombre, sexo, telefono,id,email,is_friend_publ
 sql_update = "INSERT INTO public.cuentas(nombre, sexo, telefono,id,email) values (%s,%s,%s,%s,%s)"
 # sql="INSERT INTO public.cuentas(nombre, sexo, telefono,id) values (%s,%s,%s,%s,)"
 
-oauth_token = 'EAADYPcrzZBmcBAGbENSdK7EIZAk3NfpduZCJuepAW2JSYKQ3aD3Nv8yFs21czq77DRq8MrnqZBYxOvZBUro0hGu2ofTTlKfhn9KPYw5ZCK8UWBMXhBhaxjVTjTd1eAbr4wjFW9Cq7ZCJmDZBZCUjMmdcZB0p4PEm0f9obVOL5OI6m2QgvmOKXxmYK1'  # Put your User access token here.!!
+#put your email and password 
+#generate token here https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=your_email&locale=en_US&password=ypur_passwor&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6
+
+oauth_token = ''  # Put your User access token here.!!
 graph = GraphAPI(oauth_token)
 account = 'me'
 friend_list = graph.get(account + "/friends?fields=name,gender,mobile_phone,email")
