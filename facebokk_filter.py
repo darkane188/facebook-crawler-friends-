@@ -18,13 +18,7 @@ graph = GraphAPI(oauth_token)
 account = 'me'
 friend_list = graph.get(account + "/friends?fields=name,gender,mobile_phone,email")
 print()
-# birthday wishes are as follows
-birthday_wishes = ["Life wouldn't be the same without a friend like you. Happy Birthday!",
-                   "My best wishes for a furious and voracious day filled with plenty of smile and laughter. Happy Birthday to you!",
-                   "May the special day of yours be filled with loving memories full of fun and the company of good friends. Happy Birthday!",
-                   "Look for the best and leave behind all the rest. Happy Birthday my friend!",
-                   "One year older means one year wiser. The truth is that our company needed an old wise person like you. Happy Birthday my friend"
-                   ]
+
 # print(friend_list)
 # Get today's day and month
 now = datetime.now().strftime("%m-%d")
